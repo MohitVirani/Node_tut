@@ -3,6 +3,7 @@
 // console.log(app.x)
 
 
+
 // const http = require('http');
 
 // function dataControl(req,resp){
@@ -12,6 +13,9 @@
 
 // http.createServer(dataControl).listen(4500);
 
+
+
+
 // var colors = require('colors');
 // console.log('hello'.bgBlue);
 // console.log('hello'.green); // outputs green text
@@ -19,6 +23,9 @@
 // console.log('inverse the color'.inverse); // inverses the color
 // console.log('OMG Rainbows!'.rainbow); // rainbow
 // console.log('Run the trap'.trap); // Drops the bass
+
+
+
 
 // import chalk from 'chalk';
 
@@ -54,6 +61,8 @@
 // log(chalk.rgb(123, 45, 67).underline('Underlined reddish color'));
 // log(chalk.hex('#DEADED').bold('Bold gray!'));
 
+
+
 // const http = require('http');
 // const data = require('./data')
 
@@ -62,6 +71,8 @@
 //     resp.write(JSON.stringify(data));
 //     resp.end();
 // }).listen(2200)
+
+
 
 // const fs = require('fs');
 
@@ -77,14 +88,66 @@
 //     console.log("invalid input")
 // }
 
-const fs = require('fs');
-const path = require('path');
-const DirPath = path.join(__dirname,'files')
 
-console.warn(DirPath)
 
-for(i = 0;i<5;i++){
-    fs.writeFileSync(DirPath+`/hello${i}.txt`,'a simple text file')
-}
+// const fs = require('fs');
+// const path = require('path');
+// const DirPath = path.join(__dirname,'files')
 
-//fs.writeFileSync('Apple.txt','This Is apple file')
+//console.warn(DirPath)
+
+// for(i = 0;i<5;i++){
+//     fs.writeFileSync(DirPath+`/hello${i}.txt`,'a simple text file')
+// }
+
+// fs.readdir(DirPath,(error,files)=>{
+//     files.forEach((item)=>{
+//         console.log("File Name Is : " + item);
+//     })
+    
+// })
+
+
+
+// const fs = require('fs');
+// const path = require('path');
+// const DirPath = path.join(__dirname,'crud')
+
+// // Create File
+// const FilePath = `${DirPath}/Apple.txt`;
+
+//fs.writeFileSync(FilePath, 'This Is Simple file for leaning' );
+
+// // Read File
+// fs.readFile(FilePath,'utf8',(error,item)=>{
+//     console.log(item)
+// })
+
+// // Update File
+// fs.appendFile(FilePath,' And File Name is Apple.txt',(error)=>{
+//     if(!error) console.log('file is updated')
+// })
+
+// // Rename File
+// fs.rename(FilePath,`${DirPath}/fruit.txt`,(err)=>{
+//     if(!err) console.log('file is updated')
+// })
+
+// // Delete File
+// fs.unlinkSync(`${DirPath}/fruit.txt`);
+
+
+
+// let a = 10;
+// let b = 0;
+
+// let waitingData = new Promise((resolve,reject) => {    
+//     setTimeout(() => {
+//        resolve(30);
+//     }, 2000);
+// });
+   
+// waitingData.then((data) =>{
+//     b = data;
+//     console.log(a+b);
+// });
